@@ -177,7 +177,7 @@ class CardTests(unittest.TestCase):
 		my_card = Card(rank=11) 										#11 Test that if you create a card instance with rank 11, 							
 		self.assertEqual(type(my_card.rank), type('Jack'))				#its type will be a string
 
-	def test_smaller_deck(self):										#12 Test that if you draw a card from the deck, 
+	def test_smaller_deck(self):										##12 Test that if you draw a card from the deck, 
 		my_deck = Deck()												#the deck gets smaller
 		my_pop = my_deck.pop_card()										
 		self.assertEqual(len(my_deck.cards), 51)
